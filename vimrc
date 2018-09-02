@@ -1,0 +1,25 @@
+"My_Vim_Config
+"
+" Auto jump to latest quit location
+autocmd BufReadPost *
+ \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+ \   exe "normal! g'\"" |
+ \ endif
+
+" Syntax Highliging
+syntax on
+
+" Normal Settings
+set nu
+set ts=4
+set st
+set ai
+set hlsearch
+set ruler
+
+" FileType
+filetype indent on
+filetype plugin on
+
+" Press <F5> to store & run script
+map <F5> <ESC>:w<CR> <ESC>:!./%<CR>
