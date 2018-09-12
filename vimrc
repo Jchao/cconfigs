@@ -23,3 +23,8 @@ filetype plugin on
 
 " Press <F5> to store & run script
 map <F5> <ESC>:w<CR> <ESC>:!./%<CR>
+
+" foldmethod
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
