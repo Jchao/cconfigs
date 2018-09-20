@@ -28,3 +28,9 @@ map <F5> <ESC>:w<CR> <ESC>:!./%<CR>
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
+
+" splite window
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
